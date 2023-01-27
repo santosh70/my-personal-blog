@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+    <title>Santosh Sapkota</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" id="avatarModalTrigger" data-toggle="modal" data-target="#avatarModal"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-file fa-lg"></span>
+                            Resume</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-user fa-lg"></span>
+                            Personal Life</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="profileModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Personal Profile</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/profile-photo.jpg" height="10%" width="10%">
+                    <br>
+                    <p><strong>Kia ora everyone, </strong></p>
+                    <p>My name is Santosh Sapkota and I am originally from Nepal. I moved to New Zealand
+                        seven years ago. I love travelling and sports. My hobbies are gym, football. </p>
+
+
+                    <p>Speaking of my education background, I completed my undergraduate Diploma in Information Technology
+                        from Whitieria Polytechnic and Graduate Diploma in Information Technology from Aspire2International,
+                        Auckland, New Zealand. Currently, I am doing Masters in Information Technology from The University of Waikato.
+                        </p>
+                    <p style="color:red" class="text-center"><strong>Ma te huru huru, Ka rere te manu</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-8">
+                    <h1>Santosh Sapkota</h1>
+
+                    <br>
+                    <p>
+                        My name is Santosh Sapkota and I am originally from Nepal. I moved to New Zealand
+                        seven years ago. I love travelling and sports. My hobbies are gym, football.
+                    </p>
+                    <a id="profileModalTrigger" data-toggle="modal" data-target="#profileModal">
+                        <button type="button" class="btn btn-info">
+                            <i class="fa fa-info-circle fa-lg"></i> More Information</button>
+                    </a>
+                </div>
+                <div class="col-12 offset-sm-1 col-sm-3 align-self-center mt-5 mb-5 d-none d-sm-block">
+                    <img src="img/2.jpg" class="img-fluid rounded-circle" height=“20%”>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-12">
+                <h2 class="text-center">With My Daughter</h2>
+            </div>
+            <div class="col-12">
+                <div id="travelcarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="img/1.jpg" alt="Daughter">
+                            <div class="carousel-caption">
+                                <h4>With My Daughter</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#travelcarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#travelcarousel" data-slide-to="1"></li>
+                        <li data-target="#travelcarousel" data-slide-to="2"></li>
+                        <li data-target="#travelcarousel" data-slide-to="3"></li>
+                        <li data-target="#travelcarousel" data-slide-to="4"></li>
+                        <li data-target="#travelcarousel" data-slide-to="5"></li>
+
+                    </ol>
+                    <a class="carousel-control-prev" href="#travelcarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#travelcarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    <button class="btn btn-danger btn-sm carouselButton" id="travelcarouselButton">
+                        <span class="fa fa-pause"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#badmintoncarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#badmintoncarousel" data-slide-to="1"></li>
+
+                    </ol>
+                    <a class="carousel-control-prev" href="#badmintoncarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#badmintoncarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    <button class="btn btn-danger btn-sm carouselButton" id="badmintoncarouselButton">
+                        <span class="fa fa-pause"></span>
+                    </button>
+
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#volleyballcarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#volleyballcarousel" data-slide-to="1"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#volleyballcarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#volleyballcarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    <button class="btn btn-danger btn-sm carouselButton" id="volleyballcarouselButton">
+                        <span class="fa fa-pause"></span>
+                    </button>
+                </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-7 col-sm-3">
+                    <h5>Contact</h5>
+                    <address>
+                        Hamilton<br>
+                        New Zealand<br>
+                        <i class="fa fa-mobile fa-lg"></i> : +64 20 41505083<br>
+                        <i class="fa fa-envelope fa-lg"></i> : <a
+                            href="mailto:santoshnatural70@gmail.com">santoshnatural70@gmail.com</a>
+                    </address>
+                </div>
+                <div class="col-4 col-sm-3 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/Santosh Sapkota"><i
+                                class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin"
+                            href="https://www.linkedin.com/in/Santosh Sapkota/"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-microsoft" href="#" data-toggle="tooltip" data-html="true"
+                        title="<img src='./img/wechat.jpg' height='100px'>" data-placement="right"><i
+                            class="fa fa-weixin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p><small>Website designed and created by <a href="https://github.com/santosh70">Santosh Sapkota <i
+                                    class="fa fa-github"></i></a></small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+
+</body>
+
+
+</html>
